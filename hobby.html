@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title> 
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    /*background-color:rgba(245,209,76,1.00);
+	background-color:rgba(153,152,155,1.00);
+	background-color:rgba(107,121,127,1.00);*/
+	background-color:rgba(196,189,209,1.00);
+    position: fixed;
+    overflow: auto;
+	opacity:0.9;
+	position:absolute;
+    right:40%;
+	top:500px;
+	width:200px;
+ 
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 26px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    /*background-color:rgba(126,7,7,1.00);*/
+	background-color:rgba(156,134,122,1.00);
+    color: white;
+}
+
+li a:hover:not(.active) {
+   /* background-color:rgba(119,12,12,1.00);*/
+		background-color:rgba(164,137,142,1.00);
+    color: white;
+}
+	li {
+    border-bottom: 1px solid #bbb;
+}
+ 
+    li:last-child {
+    border-bottom: none;
+}
+	.word1{color:hsla(288,44%,26%,1.00);
+	font-size:20px;
+	padding-left: 100px;
+	}
+	.sour{position:absolute;top:380px;width:100px;left:20px;}
+	dl{padding-left:50px;}
+	.word2{font-size:15px;
+	color:hsla(7,81%,82%,1.00)}
+	dd{letter-spacing:0;
+	   line-height:25px; 
+	   font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'"";
+	}
+	.word3{font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New   Roman", "serif";
+	    font-size:30px;
+	    background:rgba(238,135,42,1.00);
+	    color:rgba(255,255,255,1.00);
+	}
+	.word4{
+		font-size:25px;
+	   /* background:hsla(283,17%,41%,1.00);*/
+	    background:hsla(281,73%,61%,1.00);
+	    color:rgba(255,255,255,1.00);
+	}
+	}
+</style>
+</head>
+<body>
+<div class="zong">
+
+
+<!--<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;height:500px;">-->
+<div style="margin:20px 20px;position:fixed;"><table border="20" style="border-collapse:collapse;border-color:hsla(3,81%,76%,1.00)">
+<tr>
+	<td colspan="2";>FILMS
+		<br>
+	<a href=https://baike.baidu.com/item/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82/10305762><Img src="19.jpg" alt="大红灯笼高高挂" title="大红灯笼高高挂" height="200px";></a>
+	<a href="https://baike.baidu.com/item/%E9%AC%BC%E5%AD%90%E6%9D%A5%E4%BA%86/4845622?fr=aladdin"><Img src="20.jpg" alt="鬼子来了" title="鬼子来了" height="200px";></a>
+	<a href="https://baike.baidu.com/item/%E5%8D%81%E5%88%86%E9%92%9F%E5%B9%B4%E5%8D%8E%E8%80%81%E5%8E%BB----%E7%99%BE%E8%8A%B1%E6%B7%B1%E5%A4%84"><Img src="21.jpg" alt="百花深处" title="百花深处" height="200px";></a>
+    <a href="https://baike.baidu.com/item/%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C/2027215"><Img src="22.jpg" alt="楚门的世界" title="楚门的世界" height="200px";></a>
+		</td>
+		
+	<td><Img src="23.jpg" alt="风景" height="200px";><br>
+		<span style="position:absolute;right:20px">TRAVEL</span></td>
+
+	</tr><tr>
+			<td width="40%"><Img src="24.jpg" alt="美食店" height="200px";><br>DELICIOUS FOODS</td>
+	<td><center><span style="font-size:20px;">WRITERS</span> <br>
+  <span style="font-size:15px;color:hsla(324,95%,91%,1.00)">余华</span> <br>
+  <span style="background-color:#B4009E;"><strong>马尔克斯</strong></span> <br>
+ <span style="font-size:30px;color:hsla(330,60%,66%,1.00)">李碧华</span> <br>
+	<span style="color:hsla(283,75%,20%,1.00)"><b><i>汪曾祺</i></b></span> <br>
+	<span style="font-size:30px;color:hsla(298,27%,21%,1.00)"><i>张爱玲</i></span> <br>
+		<span style="font-size:10px;color:hsla(323,46%,41%,1.00)">and so on</span></center>
+			</td>
+			<td><center><Img src="25.jpg" alt="额尔古纳河右岸" height="200px";></center></td>
+			</tr>
+		<tr><td  colspan="3"><ul>
+  <li><a href="index.html">home</a></li>
+</ul>
+	</td></tr>
+</div>
+	</div>
+</body>
+<script>
+window.onload=function(){ 
+setInterval(function(){  
+var date=new Date();  
+var year=date.getFullYear();  
+var mon=date.getMonth()+1;  
+var da=date.getDate(); 
+var h=date.getHours(); 
+var m=date.getMinutes(); 
+var s=date.getSeconds();  
+var d=document.getElementById('Date');  
+d.innerHTML=+year+'年'+mon+'月'+da+'日'+h+':'+m+':'+s; },1000) }
+</script>
+</html>

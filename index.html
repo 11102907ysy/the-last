@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title> 
+<style>
+body {
+    margin: 0;
+	background-image:url(5.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size:600px;}
+	h3{font-size:40px;
+	/*padding-left: 50px;*/}
+}
+	.he{margin:50px 100px;
+	/*box-shadow: 5px 5px 2px #E0EEEE*/
+	   }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    /*background-color:rgba(245,209,76,1.00);
+	background-color:rgba(153,152,155,1.00);
+	background-color:rgba(107,121,127,1.00);*/
+	background-color:rgba(196,189,209,1.00);
+    position: fixed;
+    height: 400px;
+    overflow: auto;
+	opacity:0.9;
+	position:absolute;
+    right:120px;
+	width:200px;
+ 
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 26px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    /*background-color:rgba(126,7,7,1.00);*/
+	background-color:rgba(156,134,122,1.00);
+    color: white;
+}
+
+li a:hover:not(.active) {
+   /* background-color:rgba(119,12,12,1.00);*/
+		background-color:rgba(164,137,142,1.00);
+    color: white;
+}
+	li {
+    border-bottom: 1px solid #bbb;
+}
+ 
+    li:last-child {
+    border-bottom: none;
+}
+	.word1{color:white;
+	font-size:60px;
+	padding-left: 100px;
+	}
+	/*.mus{position: absolute;
+		top:420px;
+	    left:20px;
+	     }*/
+	.sour{position:absolute;top:380px;width:100px;left:20px;}
+	.word2{letter-spacing:10px;left:50px;font-size:20px;
+		/*padding-left: 50px;*/
+	}
+	.word3{color:#40B3DF;left:50px;font-size:20px;
+		/*padding-left: 50px;*/
+	}
+	#butt{ position: absolute;
+		left:40%;
+	    top:82%;
+	    border-style:solid;
+		border-color:hsla(296,35%,53%,1.00);
+		background:hsla(262,18%,80%,1.00);
+	}
+	#hy{ display: none;
+		position:absolute;
+	    left:40%;
+	    top:88%;
+	    border-style:dashed;
+	    border-color:hsla(220,63%,57%,1.00);
+		background:hsla(327,94%,88%,1.00);}
+</style>
+</head>
+<body>
+	<div class="time"></div>
+<div class="he">
+<ul>
+  <li><a class="active" href="index.html">home</a></li>
+  <li><a href="information.html">information</a></li>
+  <li><a href="hobby.html">hobby</a></li>
+  <li><a href="experience.html">experience</a></li>
+  <li><a href="self-introduction.html">self-introduction</a></li>
+</ul>
+	
+<div class="zong">
+<div style="opacity:0.5;position:absolute;left:50px;width:600px;height:300px;background-color:rgba(166,189,196,1.00)"></div>
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;height:400px;">
+
+<div id="Date" style="opacity:0.3;position:absolute;right:20px;width:200px;height:30px;top:410px;; background-color:#8AC007">
+	
+	</div>
+
+<h3>YU SIYUAN</h3>
+
+<div class="word2">Welcome to my world!</div>
+
+<div class="word3">Nice to meet
+<span style="background-color:#B4009E;color:#ffffff;">you</span>
+	
+</div>
+
+</div>
+	</div>
+
+</div>
+<audio class="sour" controls><source src="laba.mp3" type="audio/mpeg"></audio>
+	<button id="butt">欢迎大家来找我玩呐</button>
+	<div id="hy" >
+		<div id="hy-content">
+			联系方式：<br>
+			QQ:xxxxxxxxx<br>
+			手机号：xxxxxxxx</p>
+	</div></div>
+</body>
+<script>
+window.onload=function(){ 
+setInterval(function(){  
+var date=new Date();  
+var year=date.getFullYear();  
+var mon=date.getMonth()+1;  
+var da=date.getDate(); 
+var h=date.getHours(); 
+var m=date.getMinutes(); 
+var s=date.getSeconds();  
+var d=document.getElementById('Date');  
+d.innerHTML=+year+'年'+mon+'月'+da+'日'+h+':'+m+':'+s; },1000) }
+
+var HY = document.getElementById('hy');
+var BUTT=document.getElementById('butt');
+BUTT.onclick = function() {
+    HY.style.display = "block";}
+
+</script>
+
+</html>
